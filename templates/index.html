@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Genre Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h2>Predict Track Genre</h2>
+    <form method="post" action="/predict">
+        <label>Milliseconds:</label>
+        <input type="number" name="milliseconds" required>
+        <label>Bytes:</label>
+        <input type="number" name="bytes" required>
+        <label>Unit Price:</label>
+        <input type="number" step="0.01" name="unitprice" required>
+        <button type="submit">Predict</button>
+    </form>
+</div>
+</body>
+</html>
